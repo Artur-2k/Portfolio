@@ -1,161 +1,267 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Artur Carvalho</title>
 
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">ARTUR CARVALHO</div>
-        <nav>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contacts">CONTACTS</a></li>
-            </ul>
-        </nav>
+      <div class="logo"><span>{</span>ARTUR CARVALHO<span>}</span></div>
+      <nav>
+        <ul>
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contacts">CONTACTS</a>
+        </ul>
+      </nav>
     </header>
 
-    <section class="hero">
-        <h1>Hello</h1>
-        <h2>I'm Artur Carvalho</h2>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <h1>Hello!</h1>
+        <h2>
+          I'm
+          <a
+            href="https://github.com/artur-2k"
+            target="_blank"
+            rel="no-referrer"
+            >Artur Carvalho</a
+          >
+        </h2>
         <p>Software Developer</p>
+      </div>
+
+      <div class="hero-photo">
+        <img
+          src="assets/gigachad.webp"
+          alt="Artur Carvalho"
+          class="profile-photo"
+          width="400px"
+          height="400px"
+        />
+      </div>
     </section>
 
-    <section class="skills">
-        <div class="skill-tag">C</div>
-        <div class="skill-tag">C++</div>
-        <div class="skill-tag">JS/TS</div>
-        <div class="skill-tag">HTML</div>
-        <div class="skill-tag">CSS</div>
-        <div class="skill-tag">TAILWINDCSS</div>
-        <div class="skill-tag">PYTHON</div>
-        <div class="skill-tag">DOCKER</div>
-        <div class="skill-tag">GIT</div>
-        <div class="skill-tag">BASH</div>
+    <section class="skills container">
+      <div class="skill-tag">C</div>
+      <div class="skill-tag">C++</div>
+      <div class="skill-tag">JS/TS</div>
+      <div class="skill-tag">HTML</div>
+      <div class="skill-tag">CSS</div>
+      <div class="skill-tag">TAILWINDCSS</div>
+      <div class="skill-tag">PYTHON</div>
+      <div class="skill-tag">DOCKER</div>
+      <div class="skill-tag">GIT</div>
+      <div class="skill-tag">BASH</div>
     </section>
 
-    <section class="about">
-        <h3>ABOUT ME</h3>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <h4>Portuguese Army</h4>
-                <p>Health Care Specialist</p>
+    <section id="about" class="about container">
+      <h3>ABOUT ME</h3>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Portuguese Army</h4>
+          <p>Health Care Specialist</p>
+        </div>
+        <div class="timeline-item">
+          <h4>42 Porto</h4>
+          <p>Student</p>
+        </div>
+        <div class="timeline-item">
+          <h4>BytesFuture</h4>
+          <p>Student</p>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p>
+          I'm a passionate software developer with a unique background combining
+          military service in healthcare and intensive programming education. My
+          journey has taken me from serving as a Health Care Specialist in the
+          Portuguese Army to diving deep into the world of software development.
+        </p>
+
+        <p>
+          Currently honing my skills at 42 Porto, one of the most innovative
+          coding schools, where I'm mastering fundamental programming concepts
+          and collaborative development practices. I'm also expanding my
+          expertise through BytesFuture, focusing on cutting-edge technologies
+          and industry best practices.
+        </p>
+
+        <p>
+          My diverse background has equipped me with strong problem-solving
+          abilities, attention to detail, and the discipline needed to tackle
+          complex technical challenges. I'm particularly interested in creating
+          efficient, scalable solutions that make a real impact.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h3>My Preferred Projects</h3>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <a
+            href="https://github.com/Artur-2k/Minishell"
+            rel="no-referrer"
+            target="_blank"
+          >
+
+            <img src="assets/irc.png" alt="project Screenshot" class="project-image">
+            <div class="project-content">
+              <h4 class="project-title">IRC Server</h4>
+              <p class="project-description">
+                A minimalist IRC server developed in C++98, implementing a
+                server compatible with IRC clients for real-time communication.
+                The project's goal is to support multiple clients simultaneously
+                using non-blocking operations while adhering to IRC protocol
+                requirements.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Socket Programming</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">TCP protocols</span>
+                <span class="tech-tag">IRC protocol (1459)</span>
+                <span class="tech-tag">netcat</span>
+                <span class="tech-tag">Hexchat</span>
+                <span class="tech-tag">Makefile</span>
+                <span class="tech-tag">Git</span>
+              </div>
             </div>
-            <div class="timeline-item">
-                <h4>42 Porto</h4>
-                <p>Student</p>
-            </div>
-            <div class="timeline-item">
-                <h4>BytesFuture</h4>
-                <p>Student</p>
-            </div>
+          </a>
         </div>
 
-        <div class="about-text">
-            <p>I'm a passionate software developer with a unique background combining military service in healthcare and intensive programming education. My journey has taken me from serving as a Health Care Specialist in the Portuguese Army to diving deep into the world of software development.</p>
-            
-            <p>Currently honing my skills at 42 Porto, one of the most innovative coding schools, where I'm mastering fundamental programming concepts and collaborative development practices. I'm also expanding my expertise through BytesFuture, focusing on cutting-edge technologies and industry best practices.</p>
-            
-            <p>My diverse background has equipped me with strong problem-solving abilities, attention to detail, and the discipline needed to tackle complex technical challenges. I'm particularly interested in creating efficient, scalable solutions that make a real impact.</p>
+        <div class="project-card">
+          <a
+            href="https://github.com/Artur-2k/ft_irc"
+            rel="no-referrer"
+            target="_blank"
+          >
+            <img src="assets/minishell.png" alt="Project Screenshot" class="project-image">
+            <div class="project-content">
+              <h4 class="project-title">Minishell</h4>
+              <p class="project-description">
+                A custom Unix shell developed in C, supporting pipelines,
+                redirections, environment variables, and signal handling.
+                Recreates essential shell behavior with memory managment in
+                attention.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">POSIX libraries</span>
+                <span class="tech-tag">Bash</span>
+                <span class="tech-tag">Sanitizers</span>
+                <span class="tech-tag">Valgrind</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Makefile</span>
+                <span class="tech-tag">Agile</span>
+              </div>
+            </div>
+          </a>
         </div>
+
+        <div class="project-card">
+          <a
+            href="https://github.com/Artur-2k/ft_transc/tree/main"
+            rel="no-referrer"
+            target="_blank"
+          >
+            <img src="assets/transcendence.png" alt="project Screenshot" class="project-image">
+        
+            <div class="project-content">
+              <h4 class="project-title">Transcendence</h4>
+              <p class="project-description">
+                A full-stack, collaborative, real-time single-page application
+                built with TypeScript, Tailwind CSS, Node.js, and SQLite. It
+                features user authentication, online multiplayer Pong, live
+                chat, a friend system, lobby creation, and ranked
+                matches—delivering a complete competitive gaming platform
+                experience.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">TailwindCSS</span>
+                <span class="tech-tag">Javascript</span>
+                <span class="tech-tag">Typescript</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Agile</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
+    <section id="contacts" class="contact container">
+      <h3>Contact Me</h3>
+      <p class="contact-subtitle">I'll gladly answer your questions</p>
 
-    <section class="projects">
-        <h3>My Preferred Projects</h3>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    Project Screenshot
-                </div>
-                <div class="project-content">
-                    <h4 class="project-title">Project Title</h4>
-                    <p class="project-description">
-                        Project Description
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Tech xyz</span>
-                        <span class="tech-tag">Tech xyz</span>
-                        <span class="tech-tag">Tech xyz</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    Project Screenshot
-                </div>
-                <div class="project-content">
-                    <h4 class="project-title">Project Title</h4>
-                    <p class="project-description">
-                        Project Description
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Tech xyz</span>
-                        <span class="tech-tag">Tech xyz</span>
-                        <span class="tech-tag">Tech xyz</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    Project Screenshot
-                </div>
-                <div class="project-content">
-                    <h4 class="project-title">Project Title</h4>
-                    <p class="project-description">
-                        Project Description
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Tech xyz</span>
-                        <span class="tech-tag">Tech xyz</span>
-                        <span class="tech-tag">Tech xyz</span>
-                    </div>
-                </div>
-            </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            title="Your name"
+            required
+          />
         </div>
-    </section>
 
-    <section class="contact">
-        <h3>Contact Me</h3>
-        <p class="contact-subtitle">I'll gladly answer your questions</p>
-        
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration, etc." required>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell me about your project or question..." required></textarea>
-            </div>
-            
-            <button type="submit" class="send-button">Send Message</button>
-        </form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your.email@example.com"
+            title="Your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Project inquiry, collaboration, etc."
+            title="Message subject"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me about your project or question..."
+            title="Message content"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="send-button">Send Message</button>
+      </form>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2025 Artur Carvalho. All rights reserved.</p>
+      <p>&copy; 2025 Artur Carvalho. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
