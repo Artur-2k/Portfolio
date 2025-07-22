@@ -130,8 +130,8 @@ nav a:hover::before {
 .hero {
   display: flex;
   justify-content: space-around;
-  padding: 4rem 2rem;
-  margin: 15rem 2rem 2rem 2 rem;
+  padding: 2rem 2rem;
+  margin: 5rem 2rem 2rem 2rem;
   background: rgba(var(--charcoal-blue-rgb), 0.6);
   border-radius: 15px;
   border: 1px solid rgba(var(--sage-green-rgb), 0.3);
